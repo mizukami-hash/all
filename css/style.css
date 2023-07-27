@@ -1,0 +1,110 @@
+@charset 'utf-8';
+
+
+/* =================================================== */
+/* PC用
+@media(min-width:1024px){}
+/* タブレット */
+/* @media(max-width:768px){} */
+/* スマホ */
+/* @media(max-width:375px){} */ 
+/* ========================================================== */
+
+
+image {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+body {
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  max-width:1170px;
+  /* margin:0 auto; */
+}
+
+
+/* hero */
+
+
+.hero {
+  background-image: url(../images/hero_bg.jpeg);
+  width: 98%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  padding-top:20px;
+}
+h2{
+    background-color:rgba(3,37,84,.7);
+    color:white;
+    width:500px;
+    padding:40px 100px;
+    position:absolute;
+    top:50%;
+    right:-5%;
+
+}
+
+h3{
+    text-align:center;
+    margin:100px 0 20px 0;
+    font-size: 2rem;;
+}
+h4{
+    margin-left:10px;
+}
+
+
+/* about */
+.about{
+    width:100px;
+}
+
+.about,
+.works{
+    width:80%;
+    margin:0 auto;
+}
+.about img{
+    margin-left:10px;
+}
+
+/* works */
+.works ul{
+    display: flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.works li{
+    position:relative;
+    
+}
+#date{
+    position: absolute;
+    bottom:30px;
+    left:15px;
+}
+#work{
+    position: absolute;
+    bottom:10px;
+    left:15px;
+}
+
+
+
