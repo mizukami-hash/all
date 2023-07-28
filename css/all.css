@@ -10,10 +10,10 @@ li {
     list-style: none;
   }
   body{
-    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
     max-width:1170px;
     margin:0;
     padding:0;
+    /* background-color: orange; */
   }
 a{
     text-decoration:none;
@@ -23,12 +23,18 @@ button{
     all:unset;
 }
 /* ===================================== */
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
   
   body {
-    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
     max-width:1170px;
+    font-family:'游ゴシック Medium', 'Yu Gothic Medium','游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
     /* margin:0 auto; */
   }
 
@@ -65,15 +71,25 @@ button{
 
 /* footer=============================== */
 footer {
+  margin-top:60px;
     width: 100%;
     height: 150px;
-    background-color: rgba(39, 36, 36, 0.5);
+    background-color:#1c4d69;
+    vertical-align: center;
+  }
+
+  .footer-inner{
+    color:white;
+    text-align: right;
+    margin-right:10%;
+    padding-top:45px;
+  }
+  span{
+    margin-right:5px;
+    vertical-align: bottom;
   }
   
-  #contact {
-    text-align: right;
-    padding: 30px 50px;
-  }
+
   
 
 /* ===================================== */

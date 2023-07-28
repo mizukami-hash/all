@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drawing</title>
-    <link rel="stylesheet" href="../css/drum.css">
+    <title>Omikuji</title>
+    <link rel="stylesheet" href="../css/omikuji.css">
     <link rel="stylesheet" href="../css/all.css">
     
 </head>
@@ -18,33 +18,31 @@
       </header>
 
     <div class="wrapper">
-    <h1>ドラムアプリ</h1>
-    <img src="../images/drum.PNG" alt="" id="img">
+    <h1>おみくじ</h1>
+    <img src="../images/omikuji.PNG" alt="" id="img">
     <ul id="skills">
-        <li>キーコード</li>
+        <li>乱数(Math.random)</li>
+        <li>条件分岐(if文)</li>
     </ul>
     <h2>デモページURL</h2>
-    <p><a href="https://mizukami-hash.github.io/drum-kit/" target="_blank"> https://mizukami-hash.github.io/drum-kit/</a></p>
+    <p><a href="https://mizukami-hash.github.io/omikuji/" target="_blank">https://mizukami-hash.github.io/omikuji/</a></p>
     <h2>GitHub</h2>
-    <p><a href="https://github.com/mizukami-hash/drum-kit.git" target="_blank">https://github.com/mizukami-hash/drum-kit.git</a></p>
+    <p><a href="https://github.com/mizukami-hash/omikuji.git" target="_blank">https://github.com/mizukami-hash/omikuji.git</a></p>
     <h2>制作期間</h2>
     <p>2日</p>    
     <h2>参考サイト</h2>
-    <p><a href="https://www.youtube.com/watch?v=VuN8qwZoego" target="_blank">https://www.youtube.com/watch?v=VuN8qwZoego</a></p>
+    <p><a href="https://janken.asotetu.work/js_omikuji/" target="_blank">https://janken.asotetu.work/js_omikuji/</a></p>
     <h2>学習内容</h2>
-    <p>キーコードを取得し、該当するキーが押されたときに音が鳴るドラムアプリを作りました。<br>
-        連続でキーを押したときも反応するように、再生時間を毎回ゼロに戻す処理をしています。<br>
-    </p>
+    <p>クリックで結果が表示されるシンプルなおみくじアプリです。<br>Math.random()を使って乱数を取得し、それぞれの結果毎に確率を設定しています。
+      (大吉40%、凶15%など)<br>
+      短いコードで書けるので、if文の練習や初めてのミニアプリ制作にもおすすめです。
 
-    <p> JavaScript自体は比較的シンプルでわかりやすい構造ですが、<br>CSSのtransitionプロパティが完了した時点でイベントが発火する処理を組み合わせることで<br>
-        より柔軟な表現ができることを学びました。
-        メモ／追加修正：キーコードの書き替え、マージンの調整
     </p>
-
 
     <button class="btn"><a href="../index.html">ホームに戻る</a></button>
     <button class="btn">次のアプリへ</button>
     </div>
+
     <a href="#" class="page-top"><img src="images/arrow.png" alt="" id="pageTopIcon" class="scroll"></a>
 
     <footer>
@@ -60,6 +58,8 @@
     <script src="./js/main.js"></script>
   </body>
 </html>
+
+
 
     
 </body>

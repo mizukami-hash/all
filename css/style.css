@@ -27,13 +27,14 @@ li {
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  /* background-color: pink; */
+  
 }
 
 body {
-  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  
   max-width:1170px;
   /* margin:0 auto; */
+  
 }
 
 
@@ -63,7 +64,7 @@ h2{
 
 h3{
     text-align:center;
-    margin:100px 0 20px 0;
+    margin:70px 0 20px 0;
     font-size: 2rem;;
 }
 h4{
@@ -74,27 +75,89 @@ h4{
 /* about */
 .about{
     width:100px;
-}
+    padding-top:90px;
+    z-index: 2;
+  }
+  .bg{
+    background-image: url(../images/works.bg.png);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    z-index: -1;
+    opacity:.7;
+    padding-bottom:50px;
+
+  }
+
+/* beforeホバーしたときの処理直す */
 
 .about,
 .works{
-    width:80%;
+    width:90%;
     margin:0 auto;
+}
+#about,
+#works{
+  padding-top:80px;
 }
 .about img{
     margin-left:10px;
 }
 
 /* works */
+
 .works ul{
     display: flex;
     flex-wrap:wrap;
-    gap:20px;
-}
-.works li{
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .works li {
+    overflow: hidden;
     position:relative;
-    
+    margin-bottom:20px;
+    box-shadow: 0 0 4px 4px #ccc;
+    width:300px;
+    height:230px;   
 }
+
+.works li::before{
+  content:"";
+  position:absolute;
+  bottom:20px;
+  left:10px;
+  width:100px;
+  height:60px; 
+  transform:translateX(-110%);
+  transition:.8s all .5s; 
+}
+.works li:hover::before{
+  content:"難易度:\A メモ帳アプリ \A 2023.05.05";
+  white-space: pre;
+  color:white;
+  font-weight: bold;;
+  transform:translateX(20%);
+  z-index:4;
+}
+
+.works li a::after{
+  content:"";
+  position:absolute;
+  background-color:rgba(0,0,0,1);
+  top:0;
+  left:0;
+  width:300px;
+  height:230px;
+  transform:translateX(100%);
+  transition:.3s all .2s;
+}
+.works li a:hover::after{
+  content:"";
+  background-color:rgba(0,0,0,1);
+  opacity:.6;
+  transform:translateX(0);
+  z-index:2;
+}
+
 #date{
     position: absolute;
     bottom:30px;
@@ -104,7 +167,50 @@ h4{
     position: absolute;
     bottom:10px;
     left:15px;
+  } 
+
+  
+  .works img{
+    width:100%;
+    /* height:100%; */
+    object-fit: cover;
+    transition:.5s all .2s;
+  }
+  .works li:hover img{
+  scale:1.04; 
+  }
+
+
+/* page top */
+
+/* 初期状態 */
+#pageTopIcon{
+  width:64px;
+  text-align: right;
+  margin-left:90%;
+  margin-top:50px;
+  padding:2px 10px;
+  border-radius: 8px;
+  /* opacity:0; */
+  transform:translateY(20px);
+  transition:opacity .3s, transform .3s
+  /* position:fixed; */
+}
+/* 下までスクロールしたとき */
+.active{
+  opacity:1;
+  transform:translateY(0);
 }
 
 
+/* animation */
+.animate{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .5s,transform .5s;
+}
+.animate.appear{
+  opacity:1;
+  transform:none;
+}
 
