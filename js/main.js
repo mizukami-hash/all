@@ -32,7 +32,7 @@
     };
 
     const observer =new IntersectionObserver(callback,options);
-    const targets = document.querySelectorAll(".animate");
+    const targets = document.querySelectorAll(".item");
     targets.forEach((target)=>{
         observer.observe(target);
     })

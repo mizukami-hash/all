@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="href="https://kotaro666-dev.github.io/portfolio-demo/style.css"/>
      <link rel="stylesheet" href="/css/responsive.css" /> -->
     <!-- <script src="/js/main.js"></script> -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>JavaScript</title>
@@ -34,122 +34,192 @@
         </h2>
       </div>
       
-      <div class="bg">
-      <div class="about">
-        <h3 id="about">About</h3>
-        <h4>概要</h4>
-        <p>
+      <section class="about sec triangle">
+        <div class="container">
+          <h3 id="about" >About</h3>
+          <h4>概要</h4>
+          <p>
           ポートフォリオ用に制作したJavaScriptのミニアプリをまとめたサイトです。
           HTML/CSS/JavaScriptの基礎的な内容を学んだ後に作り始めたものなので、制作物の一例として、初学者の方やこれから学習を始める方の参考になれば幸いです。
-        </p>
+          </p>
 
-        <h4>制作者</h4>
-        <img src="https://placehold.jp/120x120.png" alt="" />
-        <p>水上</p>
-        <p>
-          北陸出身の29歳。前職はWeb広告の営業をしていました。<br>
-          転職のためにHTML/CSS/JavaScriptを半年ほど勉強し、ポートフォリオを制作しています。<br>
-        </p>
-        </div>
-        
-      </div>
+          <h4>制作者</h4>
+          <div class="creator">
+            <img src="images/icon.png" alt="" />
+            <div class="text">
+              <h5>Mizukami</h5>
+              <p>
+                北陸出身の29歳。前職はWeb広告の営業をしていました。<br>
+                転職のためにHTML/CSS/JavaScriptを半年ほど勉強し、ポートフォリオを制作しています。<br>
+              </p>
+            </div>
+            <!-- creator -->
+          </div>
+          <!-- text -->
+        </div> 
+        <!-- container -->
+      </section>
 
-      <div class="works">
+      <section class="works sec">
         <h3 id="works">Works</h3>
-        <h4>制作実績</h4>
 
-        <ul class="items">
-          <li class="animate item">
-            <a href="./works/memo.html">
-                <img src="./images/memo.PNG" width="270" height="220" alt="" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">メモ帳アプリ</p> -->
-            </a>
-          </li>
+         <div id="feature">
+          <h2 class="content-title">Works</h2>
 
-          <li class="animate item">
-            <a href="./works/drawing.html">
-                <img src="./images/drawing.PNG" alt="" width="270" height="220"/>
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">お絵描きアプリ</p> -->
-            </a>
-          </li>
+          <div class="container work-items">
 
-          <li class="animate item">
-            <a href="./works/drum.html">
-                <img src="./images/drum.PNG" alt="" width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">ドラムアプリ</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/memo.html">
+              <img src="./images/memo.PNG" alt="メモ帳アプリの画像" />
+              <div class="item-content">
+                <p class="item-cat">メモ帳アプリ</p>
+                <p class="item-text">
+                  難易度：★★★<br>
+                  リロードしても消えないメモ帳アプリ
+                </p>
+                <p class="item-date">2023.07</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/wheather.html">
-                <img src="./images/wheather.PNG" alt=" "width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">天気予報アプリ</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/drawing.html">
+              <img src="./images/drawing.PNG" alt="お絵描きアプリの画像" />
+              <div class="item-content">
+                <p class="item-cat">お絵描きアプリ</p>
+                <p class="item-text">
+                  難易度：★★<br>
+                  canvas要素を使ったお絵描きアプリ
+                </p>
+                <p class="item-date">2023.07</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/timer.html">
-                <img src="./images/timer.PNG" alt="" width="270" height="220"/>
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">カウントダウンタイマー</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/drum.html">
+              <img src="./images/drum.PNG" alt="ドラムアプリの画像" />
+              <div class="item-content">
+                <p class="item-cat">ドラムアプリ</p>
+                <p class="item-text">
+                  難易度：★<br>
+                  キーを押すと音が鳴るドラムアプリ
+                </p>
+                <p class="item-date">2023.07</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/pong-game.html">
-                <img src="./images/pong.PNG" alt="" width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">ピンポンゲーム</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/wheather.html">
+              <img src="./images/wheather.PNG" alt="天気予報アプリの画像" />
+              <div class="item-content">
+                <p class="item-cat">天気予報アプリ</p>
+                <p class="item-text">
+                  難易度：★★<br>
+                  リアルタイムの天気予報を自動で更新
+                </p>
+                <p class="item-date">2023.07</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/todo.html">
-                <img src="./images/todo.PNG" alt="" width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">ToDoリスト</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/timer.html">
+              <img src="./images/timer.PNG" alt="タイマーの画像" />
+              <div class="item-content">
+                <p class="item-cat">カウントダウンタイマー</p>
+                <p class="item-text">
+                  難易度：★★<br>
+                  開始時間を時間・分・秒で指定できるタイマー
+                </p>
+                <p class="item-date">2023.06</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/slideshow.html">
-                <img src="./images/slideshow.PNG" alt="" width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">スライドショー</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/pong-game.html">
+              <img src="./images/pong.PNG" alt="ピンポンゲームの画像" />
+              <div class="item-content">
+                <p class="item-cat">ピンポンゲーム</p>
+                <p class="item-text">
+                  難易度：★★<br>
+                  canvas要素で描画したピンポンゲーム
+                </p>
+                <p class="item-date">2023.07</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/omikuji.html">
-                <img src="./images/omikuji.PNG" alt=""  width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">おみくじ</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/todo.html">
+              <img src="./images/todo.PNG" alt="Todoリストの画像" />
+              <div class="item-content">
+                <p class="item-cat">Todoリスト</p>
+                <p class="item-text">
+                  難易度：★★<br>
+                  リロードしても消えないTodoリスト
+                </p>
+                <p class="item-date">2023.06</p>
+              </div>
+              </a>
+            </div>
 
-          <li class="animate item">
-            <a href="./works/tabmenu.html">
-                <img src="images/typing.PNG" alt="" width="270" height="220" />
-                <!-- <p id="date">2023.05.05</p> -->
-                <!-- <p id="work">Tab menu</p> -->
-            </a>
-          </li>
+            <div class="item animate">
+              <a href="./works/slideshow.html">
+              <img src="./images/slideshow.PNG" alt="スライドショーの画像" />
+              <div class="item-content">
+                <p class="item-cat">スライドショー</p>
+                <p class="item-text">
+                  難易度：★★<br>
+                  自動で画像が切り替わるスライドショーアプリ
+                </p>
+                <p class="item-date">2023.06</p>
+              </div>
+              </a>
+            </div>
 
-      </div>
-      <!-- works -->
+            <div class="item animate">
+              <a href="./works/omikuji.html">
+              <img src="./images/omikuji.PNG" alt="おみくじの画像" />
+              <div class="item-content">
+                <p class="item-cat">おみくじ</p>
+                <p class="item-text">
+                  難易度：★<br>
+                  ランダムに結果が表示されるおみくじアプリ
+                </p>
+                <p class="item-date">2023.06</p>
+              </div>
+              </a>
+            </div>
+
+            <div class="item animate">
+              <a href="./works/tabmenu.html">
+              <img src="images/typing.PNG" alt="タブメニュー／タイピングゲーム" />
+              <div class="item-content">
+                <p class="item-cat">タブメニュー／タイピングゲーム</p>
+                <p class="item-text">
+                  難易度：★★★<br>
+                  タブ切り替えで単語追加ができるタイピングゲーム
+                </p>
+                <p class="item-date">2023.07</p>
+              </div>
+              </a>
+            </div>
+
+          </div>
+         <!-- container   -->
+
+        </section>
+      
     </main>
 
     <a href="#" class="page-top"><img src="images/arrow.png" alt="" id="pageTopIcon" class="scroll"></a>
 
     <footer>
-      <div class="footer-inner">
+      <div class="footer-inner" id="contact">
         <p>2023 Mizukami Portfolio</p>
-  
-        
         <p><span class="material-symbols-outlined">
           mail
           </span>mizuki.kkd@gmail.com</p>
