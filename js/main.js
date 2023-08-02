@@ -21,7 +21,6 @@
             if(!entry.isIntersecting){
                 return;
             }
-
             entry.target.classList.add('appear');
             obs.unobserve(entry.target);
         });
@@ -35,5 +34,34 @@
     const targets = document.querySelectorAll(".item");
     targets.forEach((target)=>{
         observer.observe(target);
-    })
+    });
+
+
+    // title===================================
+    const targetTitles = document.querySelectorAll(".title");
+
+    const titleCb = function (entries, obs) {
+      // console.log(entries);
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        entry.target.classList.add("appear");
+        obs.unobserve(entry.target);
+      });
+    };
+  
+    const titleOptions = {
+      threshold: 1,
+      root: null,
+        // rootMargin:"-30%",
+    };
+  
+    const titleObserver = new IntersectionObserver(titleCb);
+    targetTitles.forEach((title) => {
+      titleObserver.observe(title, titleOptions);
+    });
+
+   
+
 }

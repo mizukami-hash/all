@@ -33,9 +33,10 @@ button{
 
   
   body {
-    /* max-width:1170px; */
-    font-family:'游ゴシック Medium', 'Yu Gothic Medium','游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', sans-serif;
-    /* margin:0 auto; */
+    max-width:1440px;
+    background-color: rgb(245, 246, 247);
+    margin:0 auto;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   }
 
 /* header=============================== */
@@ -44,7 +45,8 @@ button{
 #header {
     height: 64px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background-color:#1c4d69;
+    box-shadow:0 2px 3px #aaa ;
     position: fixed;
     z-index: 5; 
 }
@@ -53,13 +55,20 @@ button{
     display: flex;
     justify-content: right;
     margin-right: 46px;
-    /* max-width:1024px; */
+    
 }
 
 #header li {
     padding-left: 32px;
     font-size: 1.3rem;
     padding-top:15px;
+    opacity:1;
+  }
+#header li:hover {
+    padding-left: 32px;
+    font-size: 1.3rem;
+    padding-top:15px;
+    opacity:.7;
   }
   
 #header a {
@@ -93,4 +102,10 @@ footer {
 
 /* ===================================== */
 
+@media(max-width:768px){
+  .footer-inner{
+    text-align: center;
+    padding-top:45px;
+  }
+}
 

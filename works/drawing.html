@@ -11,6 +11,7 @@
 <body>
     <header id="header">
         <ul class="lead">
+          <li><a href="https://mizukami-hash.github.io/all/">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#feature">Works</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -18,16 +19,19 @@
       </header>
 
     <div class="wrapper">
-    <h1>お絵描きアプリ</h1>
-    <img src="../images/drawing.PNG" alt="" id="img">
-    <ul id="skills">
+      <h1>お絵描きアプリ</h1>
+      <img src="../images/drawing.PNG" alt="" id="img">
+    <h2>スキル</h2>
+    <div class="skills">
+      <img src="../images/tag.png" alt="タグ" class="icon">
+      <ul id="skills">
         <li>canvas</li>
         <li>ローカルストレージ</li>
         <li>ダウンロード機能</li>
     </ul>
-    <h2>デモページURL</h2>
+    </div>
+    <h2>作品URL</h2>
     <p><a href="https://mizukami-hash.github.io/drawing/" target="_blank"> https://mizukami-hash.github.io/drawing/</a></p>
-    <h2>GitHub</h2>
     <p><a href="https://github.com/mizukami-hash/drawing.git" target="_blank">https://github.com/mizukami-hash/drawing.git</a></p>
     <h2>制作期間</h2>
     <p>1週間</p>    
@@ -36,24 +40,16 @@
     <h2>学習内容</h2>
     <p>HTMLのcanvas要素を使ったお絵描きアプリです。<br>クリックイベントでx軸・y軸を取得し、始点と終点を繋ぐことで線を描画しています。</p>
 
-    <p>canvas.toDataURL()メソッドを使用し画像をURLに変換することで、canvas内の描画データを移動・ダウンロードすることができるようになりました。<br>
+    <p>canvas.toDataURL()メソッドを使用し画像をURLに変換することで、canvas内の描画データを<br>移動・ダウンロードすることができるようになりました。<br>
     参考サイトのコードをベースに、保存・ギャラリーの画像選択/修正・消しゴム機能等を追加しています。</p>
-        メモ／追加修正：ダブルクリックの処理をわかりやすいものに変更、マージンの調整
     </p>
-    <h3>機能</h3>
-    <ul>
-        <li>ペン色・太さのスタイル変更</li>
-        <li>消しゴム</li>
-        <li>ローカルストレージへの保存・削除</li>
-        <li>ギャラリーの作成</li>
-        <li>選択したギャラリーの画像の修正</li>
-        <li>ダウンロード機能</li>
-    </ul>
 
+  <div class="buttons">
     <button class="btn"><a href="../index.html">ホームに戻る</a></button>
     <button class="btn">次のアプリへ</button>
     </div>
-    <a href="#" class="page-top"><img src="images/arrow.png" alt="" id="pageTopIcon" class="scroll"></a>
+</div>
+
 
     <footer>
       <div class="footer-inner">
