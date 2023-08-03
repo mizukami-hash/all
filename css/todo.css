@@ -1,4 +1,4 @@
-@charset 'utf-8';
+/* @charset 'utf-8';
 
 
   #img{
@@ -21,11 +21,11 @@
   .wrapper {
     max-width: 80%;
     margin: 0 auto;
-    /* background-color: pink; */
+
   }
 
   h2{
-    /* font-weight: normal; */
+    
     margin:15px 0;
   }
 
@@ -33,4 +33,4 @@
     margin:20px 15px 20px 0;
     border:1px solid ;
     padding:10px 5px;
-  }
+  } */

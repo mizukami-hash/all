@@ -1,4 +1,4 @@
-@charset 'utf-8';
+/* @charset 'utf-8';
 
 #img {
   width: 600px;
@@ -21,15 +21,15 @@ h1 {
   max-width: 80%;
   margin: 0 auto;
   /* background-color: pink; */
-}
+/* } */
 
-h2 {
+/* h2 { */
   /* font-weight: normal; */
-  margin: 15px 0;
+  /* margin: 15px 0;
 }
 
 .btn {
   margin: 20px 15px 20px 0;
   border: 1px solid;
   padding: 10px 5px;
-}
+} */ 

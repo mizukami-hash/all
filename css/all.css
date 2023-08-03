@@ -36,7 +36,9 @@ button{
     max-width:1440px;
     background-color: rgb(245, 246, 247);
     margin:0 auto;
-    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-family: 'Kiwi Maru', serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Sawarabi Gothic', sans-serif;
   }
 
 /* header=============================== */
@@ -45,36 +47,58 @@ button{
 #header {
     height: 64px;
     width: 100%;
-    background-color:#1c4d69;
-    box-shadow:0 2px 3px #aaa ;
+    background-color:rgb(111, 109, 114);
+    /* box-shadow:0 2px 3px #aaa ; */
+    padding-right:30px;
     position: fixed;
     z-index: 5; 
+    
 }
 
 #header ul {
     display: flex;
     justify-content: right;
-    margin-right: 46px;
+    margin-right: 43px;
+    overflow: hidden;
     
 }
 
 #header li {
-    padding-left: 32px;
+    margin-left: 40px;
+    padding:0 4px 2px 0;
     font-size: 1.3rem;
     padding-top:15px;
     opacity:1;
-  }
-#header li:hover {
-    padding-left: 32px;
-    font-size: 1.3rem;
-    padding-top:15px;
-    opacity:.7;
+    overflow: hidden;
+
   }
   
 #header a {
     color: #eee;
   }
   
+  .animoBorderLeftRight{
+    display:inline-block;
+    position:relative;
+    cursor:pointer
+  }
+  .animoBorderLeftRight::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    transform:scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color:rgb(28,77,105);
+    transform-origin:bottom right;
+    transition:transform .4s cubic-bezier(.86,0,.07,1)
+  }
+  .animoBorderLeftRight:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left
+  }
+      
 /* ===================================== */
 
 /* footer=============================== */
@@ -109,3 +133,5 @@ footer {
   }
 }
 
+
+        
