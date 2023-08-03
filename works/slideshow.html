@@ -3,52 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slideshow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Noto+Sans+JP:wght@300&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="../css/slideshow.css" />
+    <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/all.css" />
+    <title>スライドショー</title>
   </head>
   <body>
     <header id="header">
       <ul class="lead">
-        <li><a href="https://mizukami-hash.github.io/all/">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#feature">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="animoBorderLeftRight"><a href="https://mizukami-hash.github.io/all/">Home</a></li>
+        <li class="animoBorderLeftRight"><a href="#about">About</a></li>
+        <li class="animoBorderLeftRight"><a href="#feature">Works</a></li>
+        <li class="animoBorderLeftRight"><a href="#contact">Contact</a></li>
       </ul>
     </header>
 
     <div class="wrapper">
+      <div class="title">
+      <p>Works <span>08</span></p>
       <h1>スライドショー</h1>
+      </div>
+      <h2 ><img src="../images/tags-double.png" alt="タグ" class="icon"> スキル</h2>
+      <div class="skills">
+        <ul id="skills">
+          <li>オブジェクト</li>
+          <li>繰り返し処理</li>
+        </ul>
+      </div>
+
       <img src="../images/slideshow.PNG" alt="" id="img" />
-      <ul id="skills">
-        <li>オブジェクト</li>
-        <li>繰り返し処理</li>
-      </ul>
-      <h2>デモページURL</h2>
-      <p>
-        <a href="https://mizukami-hash.github.io/Slideshow/" target="_blank"
-          >https://mizukami-hash.github.io/Slideshow/</a
-        >
-      </p>
-      <h3>GitHub</h3>
-      <p>
-        <a href="https://github.com/mizukami-hash/Slideshow.git" target="_blank"
-          >https://github.com/mizukami-hash/Slideshow.git</a
-        >
-      </p>
-      <h2>制作期間</h2>
-      <p>3日</p>
-      <h2>参考サイト</h2>
-      <p><a href="https://dotinstall.com/lessons/slideshow_js_v4" target="_blank"></a></p>
-      <h2>学習内容</h2>
+
+      
+ <div class="url">
+  <h3 id="url-title"><img src="../images/link.png" alt=""> 作品URL</h3>
+  <p>デモページ：<a href="https://mizukami-hash.github.io/Slideshow/" target="_blank"> https://mizukami-hash.github.io/Slideshow/</a></p>
+  <p>GitHub  　：<a href="https://github.com/mizukami-hash/Slideshow.git" target="_blank">https://github.com/mizukami-hash/Slideshow.git</a></p><br>
+  <p>参考サイト：<a href="https://dotinstall.com/lessons/slideshow_js_v4" target="_blank">https://dotinstall.com/lessons/slideshow_js_v4</a></p>
+  </div>
+
+  <h2><img src="../images/schedule.png" alt="カレンダー" class="icon"> 制作期間</h2>
+  <p>3日</p>
+<h2><img src="../images/study.png" alt="ペン" class="icon"> 学習内容</h2>
+
       <p>サムネイル付きのスライドショーです。
         写真とあわせてID・日付・コメントをオブジェクトにまとめて、仮の旅行アルバムのようなものを作ってみました。<br>
         setTimeout()を使って数秒ごとに処理を繰り返す設定をしています。
       </p>
 
-      <button class="btn"><a href="../index.html">ホームに戻る</a></button>
-      <button class="btn">次のアプリへ</button>
-    </div>
+      <div class="buttons">
+        <button class="btn btnarrow-left"><a href="../index.html">ホームに戻る</a></button>
+        <button class="btn btnarrow-right"><a href="../works/omikuji.html"> 次のアプリへ</a></button>
+        </div>
+        </div>
 
     <a href="#" class="page-top"><img src="images/arrow.png" alt="" id="pageTopIcon" class="scroll"></a>
 
