@@ -1,0 +1,25 @@
+/* =================================================== */
+
+/* タブレット */
+@media screen and (max-width: 768px) {
+  .hamburger,
+  .globalMenuSp {
+    display: block;
+  }
+  .hero {
+    z-index: 1;
+  }
+
+  #header {
+    display: none;
+  }
+  .creator {
+    display: block;
+    padding-bottom: 30px;
+  }
+  .creator img {
+    margin: 0 auto;
+  }
+}
+
+/* ========================================================== */

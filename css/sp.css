@@ -1,0 +1,35 @@
+/* =================================================== */
+  /* スマホ */
+  @media(max-width:425px){
+    .hamburger,
+    .globalMenuSp{
+    display:block;
+  }
+  .hero{
+    z-index:1;
+  }
+
+  .hamburger,
+  .globalMenuSp{
+  display:block;
+}
+
+#header{
+  display: none;
+}
+.creator{
+  display: block;
+  padding-bottom:30px;
+}
+.creator img{
+  margin:0 auto;
+}
+h2 {
+   
+    width: 400px;
+    margin:0 auto;
+    /* letter-spacing:2px; */
+  }
+    
+  }
+  /* ========================================================== */
