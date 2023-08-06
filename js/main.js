@@ -72,6 +72,7 @@
       sp.classList.add("active");
     } else {
       sp.classList.remove("active");
+      
     }
   });
   // }
