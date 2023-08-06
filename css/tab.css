@@ -6,6 +6,8 @@
   .globalMenuSp {
     display: block;
   }
+
+  /* index */
   .hero {
     z-index: 1;
   }

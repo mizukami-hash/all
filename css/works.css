@@ -3,6 +3,7 @@
 #img {
     width: 80%;
     margin: 30px auto;
+    border:2px solid ;
   }
   
   h1 {
@@ -36,6 +37,7 @@
   
   #skills {
     display: flex;
+    flex-wrap: wrap;
   }
   #skills li {
     background-color: rgb(213, 200, 176);
@@ -72,13 +74,12 @@
   
   
   .wrapper {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 5%;
   }
   
     h2 {
       display: flex;
-      width:70%;
       align-items:center;
       font-weight: normal;
       border-bottom:2px dotted skyblue;
@@ -95,8 +96,9 @@
   
   
   .btn {
-    margin: 40px 60px 20px 0;
+    margin: 40px 50px 20px 0;
     border-radius: 4px;
+
   }
   
   .icon {
