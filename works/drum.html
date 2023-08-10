@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Noto+Sans+JP:wght@300&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/drum.css">
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/all.css">
@@ -52,9 +58,10 @@
         <p>Works <span>03</span></p>
         <h1>ドラムアプリ</h1>
         </div>
-        <h2 ><img src="../images/tags-double.png" alt="タグ" class="icon"> スキル</h2>
+        <h2><img src="../images/tags-double.png" alt="タグ" class="icon"> スキル</h2>
         <ul id="skills">
           <li>キーコード</li>
+          <li>非同期処理</li>
         </ul>
         <img src="../images/drum.png" alt="" id="img">
 
@@ -65,16 +72,17 @@
       <p>参考サイト：<a href="https://www.youtube.com/watch?v=VuN8qwZoego" target="_blank">https://www.youtube.com/watch?v=VuN8qwZoego</a></p>
       </div>
 
-      <h2><img src="../images/schedule.png" alt="カレンダー" class="icon"> 制作期間</h2>
+      <h2 ><img src="../images/schedule.png" alt="カレンダー" class="icon"> 制作期間</h2>
     <p>2日</p>
 
-    <h2><img src="../images/study.png" alt="ペン" class="icon"> 学習内容</h2>
-    <p>キーコードを取得し、該当するキーが押されたときに音が鳴るドラムアプリを作りました。<br>
-        連続でキーを押したときも反応するように、再生時間を毎回ゼロに戻す処理をしています。<br>
+    <h2 ><img src="../images/study.png" alt="ペン" class="icon"> 学習内容</h2>
+    <p>キーを押したときに音が鳴るドラムアプリを作りました。<br>
+      キーボードに割り当てられているコードを取得し、指定したキーが押されたときに処理を実行しています。
+        連打したときも反応するように、再生時間を毎回ゼロに戻す処理をしています。<br>
     </p>
 
-    <p> JavaScript自体は比較的シンプルでわかりやすい構造ですが、<br>CSSのtransitionプロパティが完了した時点でイベントが発火する処理を組み合わせることで<br>
-        より柔軟な表現ができることを学びました。
+    <p> コードは比較的シンプルでわかりやすい構造ですが、CSSのtransitionプロパティと組み合わせて処理を実行する指示は他のアプリにはない内容だったため、
+      書き方の幅が広がり勉強になりました。
     </p>
 
 
@@ -93,10 +101,10 @@
         
         <p><span class="material-symbols-outlined">
           mail
-          </span>mizuki.kkd@gmail.com</p>
+          </span>email.mizukami@gmail.com</p>
       </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
   </body>
 </html>
 
