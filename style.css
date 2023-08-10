@@ -1,24 +1,5 @@
 @charset 'utf-8';
 
-/* =================================================== */
-/* PC用
-@media(min-width:1024px){}
-/* タブレット */
-/* @media(max-width:768px){
-} */
-/* スマホ */
-@media(max-width:500px){
-  h2 {
-    width: 400px;
-    padding: 30px 80px;
-    position: absolute;
-    top: 50%;
-    left:0;
-    /* margin:0 auto; */
-  }
-}
-/* ========================================================== */
-
 image {
   width: 100%;
 }
@@ -32,10 +13,6 @@ li {
   list-style: none;
 }
 
-.wrapper {
-  margin: 0 auto;
-}
-
 body {
   background-color: rgb(245, 246, 247);
 }
@@ -44,47 +21,59 @@ body {
 
 .hero {
   background-image: url(../images/hero_bg.jpeg);
-
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding-top: 20px;
-  margin-bottom: 150px;
 }
 
-h2 {
+/* top message */
+.hero h2 {
   background-color: rgba(3, 37, 84, 0.7);
   color: white;
   width: 500px;
-  padding: 40px 100px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 5%;
+  letter-spacing: 2px;
+  padding: 50px 90px 40px 112px;
 }
 
-h3 {
+/* section title */
+
+.jp {
+  display: inline-block;
+  width: 100%;
   text-align: center;
-  font-size: 2rem;
-  padding-top: 75px;
-  color: #363687;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-h4 {
-  text-align: center;
-  width: 1000px;
-  font-size: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.4rem;
+  margin: 50px 0;
 }
 
 /* about */
 
 .about {
   background-color: rgb(237, 238, 240);
+}
+.about img {
+  width: 400px;
+}
+.about p {
+  margin: 16px 0;
+}
+
+.about span {
+  display: flex;
+  border-bottom: 5px solid #ff9;
+  padding: 0;
+}
+#icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+}
+.mark {
+  display: flex;
 }
 
 .triangle {
@@ -94,72 +83,41 @@ h4 {
 .triangle:after {
   content: "";
   position: absolute;
-
   right: 0;
-  width: 0;
+  left: 0;
   height: 0;
-  border-top: 200px solid rgb(237, 238, 240);
-  border-right: 120vw solid transparent;
+  border-top: 180px solid rgb(237, 238, 240);
+  border-right: 100vw solid transparent;
   z-index: 1;
 }
 
-.about,
-.works {
-  margin: 50px auto;
-}
-
-.about img {
-  margin-left: 10px;
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 100px;
-}
 .creator {
   display: flex;
-  gap: 30px;
   margin: 0 auto;
 }
 .text {
-  text-align: left;
+  margin-left: 20px;
+}
+h5 {
+  font-size: 1.3rem;
+  margin: 30px 0 10px;
 }
 
 /* works */
 #works {
-  margin: 200px auto 70px;
-}
-
-/* page top */
-
-/* 初期状態 */
-#pageTopIcon {
-  width: 64px;
-  text-align: right;
-  margin-left: 90%;
-  margin-top: 50px;
-  padding: 2px 10px;
-  border-radius: 8px;
-  /* opacity:0; */
-  transform: translateY(20px);
-  transition: opacity 0.3s, transform 0.3s;
-  /* position:fixed; */
-}
-/* 下までスクロールしたとき */
-.active {
-  opacity: 1;
-  transform: translateY(0);
+  margin: 130px auto 70px;
 }
 
 /* item */
-.container {
+.work-items {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1500px;
-  margin: 0 auto;
-  gap: 32px;
+  justify-content: center;
+  gap: 5%;
 }
+
 .item {
+  margin-bottom: 5%;
   width: 300px;
   border: 2px #484848 solid;
   border-radius: 12px;
@@ -173,7 +131,7 @@ h4 {
   width: 100%;
   height: 200px;
   object-fit: cover;
-
+  border-radius: 12px;
 }
 
 .item-content {
@@ -182,9 +140,13 @@ h4 {
 }
 
 .item-cat {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   padding-top: 20px;
+}
+
+.lev {
+  font-size: 0.85rem;
 }
 
 .item-text {
@@ -203,7 +165,17 @@ h4 {
   transform: translateY(20px);
   transition: opacity 0.5s, transform 0.5s, scale 0.3s 0.2s;
 }
-.title{
+/* h3 section titles */
+.title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  /* padding-left: 3px; */
+  padding-top: 130px;
+  color: #363687;
+
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s, transform 0.8s, scale 0.5s 0.4s;
@@ -218,6 +190,8 @@ h4 {
   transform: none;
 }
 
-.opacity{
-  opacity:0;
+.opacity {
+  opacity: 0;
 }
+
+/* ============================================== */

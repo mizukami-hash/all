@@ -137,7 +137,7 @@ body {
   margin: 0 auto;
 }
 .container {
-  padding: 0 30px;
+  padding: 0 5%;
 }
 /* header=============================== */
 #header {
@@ -363,7 +363,7 @@ nav.globalMenuSp.active {
   }
   .wrapper {
     width: 100%;
-    min-width: 360px;
+    min-width: 425px;
     margin: 0 auto;
   }
 
@@ -462,7 +462,8 @@ nav.globalMenuSp.active {
     font-size: 1.3rem;
     display: inline-block;
     position: absolute;
-    padding: 30px 0px 30px 60px;
+    padding: 30px 0px 30px 70px;
+    width: 400px;
   }
   #header {
     display: none;
@@ -511,7 +512,7 @@ nav.globalMenuSp.active {
     color: white;
     text-align: right;
     /* margin: 0 26px 0 0; */
-    padding: 45px 0;
+    padding: 45px 5%;
   }
   h1 {
     display: block;
